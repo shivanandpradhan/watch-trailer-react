@@ -1,0 +1,67 @@
+.row_poster_item h5{
+    font-size: 1vmax;
+    text-align: center;
+    margin-top: 1vmax;
+    color: rgba(245, 245, 245, 0.527);
+}
+.poster_rating_and_button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.watch_btn{
+    background-color: crimson;
+    color: white;
+    padding: 2px 7px;
+    border: none;
+    outline: none;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.watch_btn:hover{
+    background-color: rgba(231, 41, 79, 0.849);
+    color: rgba(255, 255, 255, 0.884);
+}
+.rating{
+    padding: 0.5vmax 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.rating span{
+    font-size: 0.8vmax;
+    color: rgba(255, 255, 255, 0.473);
+}
+.row_poster_item p{
+    font-size: 0.8vmax;
+    color: rgba(255, 255, 255, 0.582);
+}
+.row_poster{
+    object-fit: contain;
+    max-height: 120px;
+    cursor: pointer;
+    transition: transform 450ns;
+}
+.row_poster:hover{
+    transform: scale(1.08);
+}
+.row_posterLarge{
+    max-height:265px;
+}
+.row_posterLarge:hover{
+    transform: scale(1.09);
+}
+
+@media screen and (max-width : 650px) {
+    .row_poster_item h5{
+        font-size: 1.8vmax;
+    }
+    .rating span{
+        font-size: 1.4vmax;
+    }
+    .row_poster_item p{
+        font-size: 1.4vmax;
+    }
+}

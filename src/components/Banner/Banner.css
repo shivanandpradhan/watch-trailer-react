@@ -1,0 +1,74 @@
+header{
+    height: 444px;
+    clip-path: polygon(0 0, 100% 1%, 100% 30%, 100% 100%, 86% 96%, 45% 100%, 0 94%, 0% 30%);
+}
+.nav-bar{
+    display: flex;
+}
+
+.banner-contents{
+    color: rgba(255, 255, 255, 0.897);
+    padding-top: 140px;
+    padding-left: 30px;
+    height: 444px;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+.banner-title{
+    font-size: 2.8rem;
+    font-weight: 800;
+    font-family: cursive;
+    padding-bottom: 0.3rem;
+}
+.banner-buttons{
+    margin-bottom: 1rem;
+}
+.banner-button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-right: 1rem;
+}
+.banner-button:first-child{
+    background-color: crimson;
+    color: white;
+    border: 1px solid crimson;
+}
+.banner-button:first-child:hover{
+    background-color: white;
+    color: crimson;
+    background-color: rgba(255, 255, 255, 0.966);
+    color: crimson;
+}
+.banner-button:last-child{
+    background-color: tomato;
+    color: white;
+    border: 1px solid tomato;
+}
+.banner-button:last-child:hover{
+    background-color: tomato;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.966);
+    color: tomato;
+}
+.banner-button:hover{
+    background-color: rgb(245, 232, 232);
+    color:  black;
+    transition: all 0.2s;
+}
+.banner-description{
+    line-height: 1.2;
+    font-size: 1rem;
+    max-width: 500px;
+    height: 130px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.banner-description::-webkit-scrollbar{
+    display: none;
+}
+.youtube-video{
+    text-align: center;
+}

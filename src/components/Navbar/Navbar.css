@@ -1,0 +1,18 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.8vmax;
+
+    display: flex;
+    z-index: 1;
+    animation-timing-function: ease-in;
+    transition: all 0.3s;
+}
+.nav-background{
+    background: #111;
+}
+.logo{
+    width: 200px;
+    object-fit: contain;
+}

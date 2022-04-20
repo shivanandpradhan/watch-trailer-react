@@ -1,0 +1,58 @@
+.row{
+    margin-left: 1.3vmax; 
+    margin-top: 2vmax; 
+    margin-right: 0.5vmax;
+}
+.row h1{
+    font-family: cursive;
+    font-size: 2.3vmax;
+}
+.row_posters{
+    display: flex;
+    gap: 10px;
+    overflow-y : hidden;
+    overflow-x : scroll;
+    padding: 10px;
+}
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+.youtube-video{
+    text-align: center;
+    padding-top: 0.8vmax;
+    width: 100%;
+}
+.error-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25vmax;
+    padding: 1.5vmax 0;
+    color: crimson;
+}
+.error-message button{
+    border: none;
+    outline: none;
+    background-color: #111;
+    font-size: 1.8vmax;
+    font-weight: 500;
+    color: tomato;
+    cursor: pointer;
+    padding: 1vmax 2vmax;
+}
+.video-wrapper{
+    width: 50%;
+    height: 450px;
+}
+@media screen and (max-width : 600px) {
+    .row h1{
+        font-size: 2.8vmax;
+    }
+    .error-message button {
+        font-size: 2.2vmax;
+    }
+    .video-wrapper{
+        width: 95%;
+        height: 300px;
+    }
+}
