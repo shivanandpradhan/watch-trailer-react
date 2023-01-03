@@ -29,7 +29,9 @@ function Banner({ fetchUrl }) {
   }, []);
 
   function handleNext() {
-    {errorMessage && setErrorMessage("")}
+    {
+      errorMessage && setErrorMessage("");
+    }
 
     setMovie(responseData[Math.floor(Math.random() * responseData.length)]);
 
@@ -50,7 +52,7 @@ function Banner({ fetchUrl }) {
         })
         .catch((error) => {
           setButton("Play");
-          setErrorMessage("Trailer Requested Not Found. Try Next")
+          setErrorMessage("Trailer Requested Not Found. Try Next");
         });
     }
   };

@@ -1,33 +1,23 @@
+.row_poster_item .row_item_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .row_poster_item h5{
     font-size: 1vmax;
     text-align: center;
     margin-top: 1vmax;
     color: rgba(245, 245, 245, 0.527);
-}
-.poster_rating_and_button{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.watch_btn{
-    background-color: crimson;
-    color: white;
-    padding: 2px 7px;
-    border: none;
-    outline: none;
-    border: 1px solid crimson;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-.watch_btn:hover{
-    background-color: rgba(231, 41, 79, 0.849);
-    color: rgba(255, 255, 255, 0.884);
+    width: 18ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .rating{
     padding: 0.5vmax 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4px;
 }
 .rating span{
@@ -53,7 +43,44 @@
 .row_posterLarge:hover{
     transform: scale(1.09);
 }
-
+.btn-container-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.watch_btn, .details_btn{
+    padding: 0.25rem 0.75rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.watch_btn{
+    background-color: crimson;
+    color: white;
+    border: 1px solid crimson;
+}
+.watch_btn:hover{
+    background-color: rgba(231, 41, 79, 0.849);
+    color: rgba(255, 255, 255, 0.884);
+}
+.details_btn{
+    background-color: rgba(255, 255, 255, 0.943);
+    border: 1px solid rgba(255, 255, 255, 0.943);
+    color: rgba(0, 0, 0, 0.829);
+}
+.details_btn:hover{
+    background-color: white;
+    color: crimson;
+}
+.watch_btn:disabled{
+    background-color: rgba(220, 20, 60, 0.639);
+    border-color: rgba(220, 20, 60, 0.559);;
+    cursor: default;
+}
 @media screen and (max-width : 650px) {
     .row_poster_item h5{
         font-size: 1.8vmax;

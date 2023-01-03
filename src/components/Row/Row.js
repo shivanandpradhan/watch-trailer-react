@@ -15,33 +15,41 @@ function Row({ title, fetchUrl, isLargeImg }) {
   }, [fetchUrl]);
 
   const deleteErrorMessage = () => {
-      setErrorMessage("")
-  }
+    setErrorMessage("");
+  };
 
   return (
     <div className="row">
-        <h1>{title}</h1>
-        <div className="row_posters">
-            {movies.map((movie) => (
-            <RowItem key={movie.id}
-                movie={movie}
-                trailerUrl={trailerUrl}
-                setTrailerUrl={setTrailerUrl}
-                isLargeImg={isLargeImg}
-                errorMessage = {errorMessage}
-                setErrorMessage = {setErrorMessage}
-            />
-            ))}
-        </div>
-        <div className="youtube-video">
-            {errorMessage && (
-                <div className="error-message">
-                    <h3>{errorMessage}</h3>
-                    <button className="delete_error_button" onClick={deleteErrorMessage}>X</button>
-                </div>
-                )}
-            {trailerUrl && <Youtube className="video-wrapper" videoId={trailerUrl} />}
-        </div>
+      <h1>{title}</h1>
+      <div className="row_posters">
+        {movies.map((movie) => (
+          <RowItem
+            key={movie.id}
+            movie={movie}
+            trailerUrl={trailerUrl}
+            setTrailerUrl={setTrailerUrl}
+            isLargeImg={isLargeImg}
+            errorMessage={errorMessage}
+            setErrorMessage={setErrorMessage}
+          />
+        ))}
+      </div>
+      <div className="youtube-video">
+        {errorMessage && (
+          <div className="error-message">
+            <h3>{errorMessage}</h3>
+            <button
+              className="delete_error_button"
+              onClick={deleteErrorMessage}
+            >
+              X
+            </button>
+          </div>
+        )}
+        {trailerUrl && (
+          <Youtube className="video-wrapper" videoId={trailerUrl} />
+        )}
+      </div>
     </div>
   );
 }
